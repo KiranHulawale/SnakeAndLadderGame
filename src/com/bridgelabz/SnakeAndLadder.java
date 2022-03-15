@@ -8,6 +8,7 @@ public class SnakeAndLadder {
         System.out.println(" Welcome player!! ");
         int dice;
         int option;
+        int roll = 0;
 
         while (position < 100) {
             dice = (int)Math.floor( (Math.random() * 10) % 6 + 1);
@@ -33,7 +34,8 @@ public class SnakeAndLadder {
                     break;
             }
             System.out.println(" Current position: " + position);
+            roll++;
         }
-        System.out.println(" Congratulations!! You won the game!!");
+        System.out.println(" Congratulations!! You took " + roll + " rolls to win the game!!");
     }
 }
